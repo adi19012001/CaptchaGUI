@@ -1,0 +1,30 @@
+# function to find the palindrome of the number given( non negative)
+
+def fact(a):
+    if(a>0) or a==0:
+        fac=1
+        for i in range(1,a+1):
+          fac=fac*i
+        print("Factorial of number", a, "is=", fac)
+    else:
+        print("The number is a negative number anf factorial is not possible")
+
+x=int(input("Enter the number= "))
+fact(x)
+
+# factorial using for loop
+
+fact=1
+n=int(input("\nEnter the number for which you want to find the factorial= "))
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
+
+# factorial program
+
+a=int(input("\nEnter the number for factorial of the number= "))
+def factorial(a):
+      return 1 if(a==0 or a==1) else a*factorial(a-1)
+print("\nFactorial of the given number is= ", factorial(a))
+
+

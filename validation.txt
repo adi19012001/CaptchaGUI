@@ -1,0 +1,34 @@
+#program to validate a phone number
+
+a=int(input("Enter the number= "))
+b=str(a)
+c=len(b)
+if b[0]==0:
+    print("INVALID")
+elif c>10:
+    print("Invalid number")
+else:
+    print("valid")
+
+
+
+# email validation
+
+a=input("Enter e-mail= ")
+if "@" in a and "." in a:
+    print("VAlid Email")
+else:
+    print("Not a valid e-mail")
+
+# program to validate e-mail id
+
+a=input("Enter e-mail id")
+
+if a.find("@")==True:
+   print("valid e-mail")
+elif a.find(".")==True:
+    print("VALID")
+elif len(a)<7:
+    print("Invalid e-mail")
+else:
+    print("InValid e-mail")
